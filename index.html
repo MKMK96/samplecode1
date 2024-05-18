@@ -3,104 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Dynamic Resume with Fireworks</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="profile">
-                <img src="profile.jpg" alt="Profile Picture">
-                <h1>Santhosh S</h1>
-                <p>Software Engineer</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am a software engineer with strong skills in Java and databases such as SQL, Oracle, and PostgreSQL. I am enthusiastic and honest, with experience in programming languages like C, C++, HTML, and data structures.</p>
-            </div>
+    <div class="fireworks-container" id="fireworks-container">
+        <canvas id="fireworks"></canvas>
+    </div>
+    <div class="resume-content">
+        <header>
+            <h1>Your Name</h1>
+            <p>Software Engineer | Web Developer</p>
+        </header>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum justo quis eros commodo, vel mollis velit ultrices.</p>
         </section>
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skill">
-                    <h3>Java</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>SQL</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>Oracle</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>PostgreSQL</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 75%;"></div>
-                    </div>
-                </div>
-            </div>
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Software Developer</strong> | Company Name | 2020 - Present</li>
+                <li><strong>Intern</strong> | Another Company | 2018 - 2020</li>
+            </ul>
         </section>
-        <section id="experience">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="job">
-                    <h3>Softeon</h3>
-                    <p>Software Engineer</p>
-                    <p>Developed and maintained applications using Java and various database technologies.</p>
-                </div>
-                <div class="job">
-                    <h3>College of Engineering, Guindy</h3>
-                    <p>MCA</p>
-                    <p>Completed my Master's in Computer Applications.</p>
-                </div>
-                <div class="job">
-                    <h3>Patrician College of Arts and Science</h3>
-                    <p>BCA</p>
-                    <p>Completed my Bachelor's in Computer Applications.</p>
-                </div>
-            </div>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Python, Java, SQL</li>
+                <li>Responsive Web Design</li>
+            </ul>
         </section>
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <form id="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
+        <section class="education">
+            <h2>Education</h2>
+            <p>Master of Computer Applications (MCA) - University Name</p>
+            <p>Bachelor of Computer Applications (BCA) - College Name</p>
         </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Santhosh S. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
