@@ -1,13 +1,25 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for your message!');
-});
+// Fireworks animation script
 
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+(function() {
+    var fireworks = new Fireworks({
+        target: document.getElementById('fireworks'),
+        hue: 120,
+        startDelay: 1,
+        minDelay: 20,
+        maxDelay: 40,
+        speed: 4,
+        acceleration: 1.05,
+        friction: 0.96,
+        gravity: 1,
+        particles: 90,
+        trace: 3,
+        explosion: 5,
+        autoresize: true,
+        maxrockets: 2,
+        maxtrail: 3,
+        lifetime: 200,
+        // start: function () {},
+        // stop: function () {}
     });
-});
+    fireworks.start();
+})();
