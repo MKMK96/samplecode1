@@ -1,1 +1,8 @@
-theme: minima
+title: My Awesome Site
+description: >- 
+  Welcome to my awesome site built with Jekyll and GitHub Pages.
+theme: jekyll-theme-primer
+baseurl: "" 
+url: "https://MKMK96.github.io" 
+github_username: MKMK96
+source: docs
