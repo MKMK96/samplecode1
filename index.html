@@ -3,13 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is a sample website hosted using GitHub Pages.</p>
-    <button onclick="showAlert()">Click Me</button>
-    <script src="scripts.js"></script>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h1>Santhosh S</h1>
+                <p>Software Engineer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a software engineer with strong skills in Java and databases such as SQL, Oracle, and PostgreSQL. I am enthusiastic and honest, with experience in programming languages like C, C++, HTML, and data structures.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Oracle</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>PostgreSQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Softeon</h3>
+                    <p>Software Engineer</p>
+                    <p>Developed and maintained applications using Java and various database technologies.</p>
+                </div>
+                <div class="job">
+                    <h3>College of Engineering, Guindy</h3>
+                    <p>MCA</p>
+                    <p>Completed my Master's in Computer Applications.</p>
+                </div>
+                <div class="job">
+                    <h3>Patrician College of Arts and Science</h3>
+                    <p>BCA</p>
+                    <p>Completed my Bachelor's in Computer Applications.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Santhosh S. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
